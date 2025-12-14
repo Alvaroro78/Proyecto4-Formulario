@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.icesi.proyectoformulario.controller.RegisterController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="553.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.icesi.proyectoformulario.controller.RegisterController">
+   <children>
+      <TextField fx:id="idField" layoutX="38.0" layoutY="64.0" text="Identificacion" />
+      <TextField fx:id="nameField" layoutX="38.0" layoutY="99.0" text="Nombres" />
+      <TextField fx:id="surnameField" layoutX="38.0" layoutY="135.0" text="Apellidos" />
+      <DatePicker fx:id="birthField" layoutX="38.0" layoutY="175.0" />
+      <Label layoutX="227.0" layoutY="179.0" text="Fecha de nacimiento" />
+      <TextField fx:id="emailField" layoutX="38.0" layoutY="212.0" text="Email" />
+      <ChoiceBox fx:id="fanaticField" layoutX="38.0" layoutY="252.0" prefWidth="150.0" AnchorPane.bottomAnchor="276.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="723.0" AnchorPane.topAnchor="252.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ChoiceBox>
+      <TextField fx:id="movieNameField" layoutX="38.0" layoutY="293.0" text="Nombre pelicula favorita" />
+      <DatePicker fx:id="premiereField" layoutX="38.0" layoutY="339.0" />
+      <Label layoutX="227.0" layoutY="343.0" text="Fecha de lanzamiento" />
+      <ChoiceBox fx:id="subgenreField" layoutX="38.0" layoutY="389.0" prefWidth="150.0" />
+      <ImageView fx:id="imageView" fitHeight="410.0" fitWidth="376.0" layoutX="463.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="imageField" layoutX="39.0" layoutY="430.0" onAction="#BrowseImage" />
+      <Button layoutX="404.0" layoutY="504.0" mnemonicParsing="false" onAction="#registerMember" text="Registrar miembro" />
+   </children>
 </AnchorPane>
